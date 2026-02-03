@@ -1,12 +1,12 @@
 package com.example.day3_sms_springboot.model;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Data // automatically make getter and setters for everyone
+//@Data // automatically make getter and setters for everyone
+@Getter
+@Setter
 @AllArgsConstructor //automatically make constructors for everyone
 @NoArgsConstructor // (optional) used for making empty constructor
 @Document(collection = "students")
