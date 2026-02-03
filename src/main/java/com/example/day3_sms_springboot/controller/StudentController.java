@@ -29,7 +29,7 @@ public class StudentController {
 
     //update (PUT)
     @PutMapping("/update/{id}")
-    public StudentModel updateStudent(@PathVariable String id , @RequestBody StudentModel student){
+    public StudentResponseDto updateStudent(@PathVariable String id , @RequestBody StudentRequestDto student){
         return service.updateStudent(id,student);
     }
 
